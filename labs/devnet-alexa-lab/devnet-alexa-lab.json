@@ -14,10 +14,10 @@
         "title": "UCS"
     }],
     "files": [{
-        "title": "Overview and Resources",
+        "title": "Overview and resources",
         "file": "1.md"
     }, {
-        "title": "Setup Your Environment",
+        "title": "Set up your environment",
         "file": "2.md"
     }, {
         "title": "Create the Lambda Function",
@@ -26,7 +26,7 @@
         "title": "Create the Alex Skill",
         "file": "4.md"
     }, {
-        "title": "Manage the Data Center With Voice",
+        "title": "Manage the Data Center with voice commands",
         "file": "5.md"
     }],
     "authors": [{
