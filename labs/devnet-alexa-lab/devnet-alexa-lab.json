@@ -49,7 +49,7 @@
   "replaceAtRender": {
     "default": [
       {
-        "type": "genral",
+        "type": "general",
         "fields": [
           {
             "find": "{{AWS_USERNAME}}",
@@ -72,6 +72,11 @@
             "replace": "<ucs-manager-ip>"
           }
         ]
+      }
+    ],
+    "gsx2018": [
+      {
+        "type": "leaseInfo"
       }
     ]
   },
