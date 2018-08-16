@@ -1,37 +1,79 @@
 {
-    "labId": "devnet-alexa-lab",
-    "title": "DevNet Alexa Data Center Skill",
-    "slug": "In this lab you will put together the pieces for an Alexa Skill that will let you use voice to manage Cisco Data Center Infrastructure. Your Data Center Infrastructure is represented by Cisco UCS and Cisco UCS Manager. Cisco's line of compute offerings is collectively referred to as the Unified Compute System, that's what UCS stands for and UCS Manager is one way of managing those compute resources. You don't need to know anything about UCS Manager, if you do great, but it's OK if you don't.",
-    "time": "45",
-    "byod": true,
-    "tags": [{
-        "title": "Data Center"
-    }, {
-        "title": "Python"
-    }, {
+  "labId": "devnet-alexa-lab",
+  "title": "DevNet Alexa Data Center Skill",
+  "slug": "In this lab you will put together the pieces for an Alexa Skill that will let you use voice to manage Cisco Data Center Infrastructure. Your Data Center Infrastructure is represented by Cisco UCS and Cisco UCS Manager. Cisco's line of compute offerings is collectively referred to as the Unified Compute System, that's what UCS stands for and UCS Manager is one way of managing those compute resources. You don't need to know anything about UCS Manager, if you do great, but it's OK if you don't.",
+  "time": "45",
+  "byod": true,
+  "tags": [
+    {
+      "title": "Data Center"
+    },
+    {
+      "title": "Python"
+    },
+    {
         "title": "Alexa"
-    }, {
-        "title": "UCS"
-    }],
-    "files": [{
-        "title": "Overview and Resources",
-        "file": "1.md"
-    }, {
-        "title": "Setup Your Environment",
-        "file": "2.md"
-    }, {
-        "title": "Create the Lambda Function",
-        "file": "3.md"
-    }, {
-        "title": "Create the Alex Skill",
-        "file": "4.md"
-    }, {
-        "title": "Manage the Data Center With Voice",
-        "file": "5.md"
-    }],
-    "authors": [{
-        "name": "John McDonough",
-        "email": "jomcdono@cisco.com"
-    }],
-    "active": true
+    },
+    {
+      "title": "UCS"
+    }
+  ],
+  "files": [
+    {
+      "title": "Overview and Resources",
+      "file": "1.md"
+    },
+    {
+      "title": "Setup Your Environment",
+      "file": "2.md"
+    },
+    {
+      "title": "Create the Lambda Function",
+      "file": "3.md"
+    },
+    {
+      "title": "Create the Alex Skill",
+      "file": "4.md"
+    },
+    {
+      "title": "Manage the Data Center With Voice",
+      "file": "5.md"
+    }
+  ],
+  "authors": [
+    {
+      "name": "John McDonough",
+      "email": "jomcdono@cisco.com"
+    }
+  ],
+  "replaceAtRender": {
+    "default": [
+      {
+        "type": "genral",
+        "fields": [
+          {
+            "find": "{{AWS_USERNAME}}",
+            "replace": "<your-aws-username>"
+          },
+          {
+            "find": "{{AWS_PASSWORD}}",
+            "replace": "<your-aws-password>"
+          },
+          {
+            "find": "{{AWS_ACCESS_KEY_ID}}",
+            "replace": "<your-aws-access-key-id>"
+          },
+          {
+            "find": "{{AWS_SECRET_ACCESS_KEY}}",
+            "replace": "<your-aws-secret-access-key>"
+          },
+          {
+            "find": "{{UCS_SERVER_IP}}",
+            "replace": "<ucs-manager-ip>"
+          }
+        ]
+      }
+    ]
+  },
+  "active": true
 }
